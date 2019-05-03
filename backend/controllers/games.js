@@ -3,7 +3,7 @@ let Games = mongoose.model('Games');
 
 
 exports.games_create = (req, res) => {
-	
+	console.log("create body", req.body);
 	let games = new Games({
 
 		title: req.body.title,
